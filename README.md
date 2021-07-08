@@ -36,3 +36,5 @@ pos = partition(arr, n, medOfMed)<br>
 
 
  <br>
+ 
+ You can visit it's wiki page, access more information.<br>
