@@ -17,7 +17,7 @@ Input: arr[] = {7, 10, 4, 3, 20, 15}<br>
 Output: 10<br>
  <br>
 
-Recommended: Please solve it on “PRACTICE ” first, before moving on to the solution. <br>
+
  <br>
  In this post, a worst-case linear time method is discussed. The idea in this new method is similar to quickSelect(), we get worst-case linear time by selecting a pivot that divides array in a balanced way (there are not very few elements on one side and many on another side). After the array is divided in a balanced way, we apply the same steps as used in quickSelect() to decide whether to go left or right of the pivot.
 Following is complete algorithm.<br>
@@ -34,6 +34,5 @@ pos = partition(arr, n, medOfMed)<br>
 6) If pos > k return kthSmallest(arr[l..pos-1], k) <br>
 7) If pos < k return kthSmallest(arr[pos+1..r], k-pos+l-1)<br>
 
-In above algorithm, last 3 steps are same as algorithm in previous post. The first four steps are used to obtain a good point for partitioning the array (to make sure that there are not too many elements either side of pivot).<br>
-Following is the implementation of above algorithm. <br>
+
  <br>
